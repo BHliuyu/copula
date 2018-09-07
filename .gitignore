@@ -6,5 +6,4 @@
 *.asv
 *.Rc
 *.eps
-*.pdf
 **/symbols.rds
