@@ -1,3 +1,6 @@
+setwd("/Users/liuyu/copula")
+library(zoo)
+library(xts)
 library(quantmod)
 library(umap)
 
@@ -146,8 +149,8 @@ X <- list(JD_Stock[, -1],
 
 names(X) <- list('JDStock', 'BABAStock', 'Covarites')
 
-Y <- list(JD_Stock[, 1],
-          BABA_Stock[, 1])
+Y <- list(as.matrix(JD_Stock[, 1]),
+          as.matrix(BABA_Stock[, 1]))
 names(Y) <- list('JDStock', 'BABAStock')
 
 
