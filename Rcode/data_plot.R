@@ -1,3 +1,4 @@
+setwd("~/copula")
 library(tseries)
 library(ggthemes)
 library(ggplot2)
@@ -5,7 +6,7 @@ library(xts)
 
 # load date data from 2017-05-23 to 2018-08-17
 # Because the function 'xts' require specific format :'%Y-%m-%d'
-setwd("~/copula")
+
 old_date <- read.csv('Rdata/date.csv')
 date <- as.character(old_date$X0)
 
@@ -32,8 +33,8 @@ plot(JD_cov1)
 plot(BABA_cov1)
 plot(JD_cov2)
 plot(BABA_cov2)
-plot(score_JD, type = 'h')
-plot(score_BABA, type = 'h')
+plot(score_JD)
+plot(score_BABA)
 
 
 
